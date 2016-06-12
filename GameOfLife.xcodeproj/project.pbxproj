@@ -16,6 +16,7 @@
 		B51F2A211D0D3BD600D68134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51F2A1F1D0D3BD600D68134 /* LaunchScreen.storyboard */; };
 		B51F2A2C1D0D3BD600D68134 /* GameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F2A2B1D0D3BD600D68134 /* GameOfLifeTests.swift */; };
 		B51F2A371D0D3BD600D68134 /* GameOfLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F2A361D0D3BD600D68134 /* GameOfLifeUITests.swift */; };
+		B51F2A451D0D3C7C00D68134 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = B51F2A441D0D3C7C00D68134 /* Utils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B51F2A321D0D3BD600D68134 /* GameOfLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51F2A361D0D3BD600D68134 /* GameOfLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeUITests.swift; sourceTree = "<group>"; };
 		B51F2A381D0D3BD600D68134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51F2A441D0D3C7C00D68134 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		B51F2A111D0D3BD600D68134 /* GameOfLife */ = {
 			isa = PBXGroup;
 			children = (
+				B51F2A441D0D3C7C00D68134 /* Utils */,
 				B51F2A121D0D3BD600D68134 /* AppDelegate.swift */,
 				B51F2A141D0D3BD600D68134 /* GameScene.sks */,
 				B51F2A161D0D3BD600D68134 /* GameScene.swift */,
@@ -237,6 +240,7 @@
 			files = (
 				B51F2A151D0D3BD600D68134 /* GameScene.sks in Resources */,
 				B51F2A211D0D3BD600D68134 /* LaunchScreen.storyboard in Resources */,
+				B51F2A451D0D3C7C00D68134 /* Utils in Resources */,
 				B51F2A1E1D0D3BD600D68134 /* Assets.xcassets in Resources */,
 				B51F2A1C1D0D3BD600D68134 /* Main.storyboard in Resources */,
 			);
