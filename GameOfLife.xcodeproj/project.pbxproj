@@ -17,6 +17,8 @@
 		B51F2A2C1D0D3BD600D68134 /* GameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F2A2B1D0D3BD600D68134 /* GameOfLifeTests.swift */; };
 		B51F2A371D0D3BD600D68134 /* GameOfLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51F2A361D0D3BD600D68134 /* GameOfLifeUITests.swift */; };
 		B51F2A451D0D3C7C00D68134 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = B51F2A441D0D3C7C00D68134 /* Utils */; };
+		B57ADC971D0F19F50058AC39 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ADC961D0F19F50058AC39 /* Grid.swift */; };
+		B57ADC991D0F1A560058AC39 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ADC981D0F1A560058AC39 /* Creature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B51F2A361D0D3BD600D68134 /* GameOfLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeUITests.swift; sourceTree = "<group>"; };
 		B51F2A381D0D3BD600D68134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B51F2A441D0D3C7C00D68134 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
+		B57ADC961D0F19F50058AC39 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B57ADC981D0F1A560058AC39 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				B51F2A441D0D3C7C00D68134 /* Utils */,
 				B51F2A121D0D3BD600D68134 /* AppDelegate.swift */,
 				B51F2A141D0D3BD600D68134 /* GameScene.sks */,
+				B57ADC961D0F19F50058AC39 /* Grid.swift */,
+				B57ADC981D0F1A560058AC39 /* Creature.swift */,
 				B51F2A161D0D3BD600D68134 /* GameScene.swift */,
 				B51F2A181D0D3BD600D68134 /* GameViewController.swift */,
 				B51F2A1A1D0D3BD600D68134 /* Main.storyboard */,
@@ -270,6 +276,8 @@
 				B51F2A171D0D3BD600D68134 /* GameScene.swift in Sources */,
 				B51F2A191D0D3BD600D68134 /* GameViewController.swift in Sources */,
 				B51F2A131D0D3BD600D68134 /* AppDelegate.swift in Sources */,
+				B57ADC991D0F1A560058AC39 /* Creature.swift in Sources */,
+				B57ADC971D0F19F50058AC39 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +504,7 @@
 				B51F2A3D1D0D3BD600D68134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B51F2A3E1D0D3BD600D68134 /* Build configuration list for PBXNativeTarget "GameOfLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +513,7 @@
 				B51F2A401D0D3BD600D68134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B51F2A411D0D3BD600D68134 /* Build configuration list for PBXNativeTarget "GameOfLifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +522,7 @@
 				B51F2A431D0D3BD600D68134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
