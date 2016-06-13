@@ -19,6 +19,7 @@
 		B51F2A451D0D3C7C00D68134 /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = B51F2A441D0D3C7C00D68134 /* Utils */; };
 		B57ADC971D0F19F50058AC39 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ADC961D0F19F50058AC39 /* Grid.swift */; };
 		B57ADC991D0F1A560058AC39 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ADC981D0F1A560058AC39 /* Creature.swift */; };
+		B57ADC9B1D0F1D770058AC39 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57ADC9A1D0F1D770058AC39 /* MSButtonNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B51F2A441D0D3C7C00D68134 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
 		B57ADC961D0F19F50058AC39 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		B57ADC981D0F1A560058AC39 /* Creature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		B57ADC9A1D0F1D770058AC39 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				B57ADC981D0F1A560058AC39 /* Creature.swift */,
 				B51F2A161D0D3BD600D68134 /* GameScene.swift */,
 				B51F2A181D0D3BD600D68134 /* GameViewController.swift */,
+				B57ADC9A1D0F1D770058AC39 /* MSButtonNode.swift */,
 				B51F2A1A1D0D3BD600D68134 /* Main.storyboard */,
 				B51F2A1D1D0D3BD600D68134 /* Assets.xcassets */,
 				B51F2A1F1D0D3BD600D68134 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				B51F2A171D0D3BD600D68134 /* GameScene.swift in Sources */,
 				B51F2A191D0D3BD600D68134 /* GameViewController.swift in Sources */,
 				B51F2A131D0D3BD600D68134 /* AppDelegate.swift in Sources */,
+				B57ADC9B1D0F1D770058AC39 /* MSButtonNode.swift in Sources */,
 				B57ADC991D0F1A560058AC39 /* Creature.swift in Sources */,
 				B57ADC971D0F19F50058AC39 /* Grid.swift in Sources */,
 			);

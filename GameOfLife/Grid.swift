@@ -95,4 +95,92 @@ class Grid: SKSpriteNode {
         /* Add creature to grid array */
         gridArray[x].append(creature)
     }
+    
+    func countNeighbors() {
+        /* Process array and update creature neighbor count */
+        
+        /* Loop through columns */
+        for gridX in 0..<columns {
+            
+            /* Loop through rows */
+            for gridY in 0..<rows {
+                
+                /* Grab creature at grid position */
+                let currentCreature = gridArray[gridX][gridY]
+                
+                /* Reset neighbor count */
+                currentCreature.neighborCount = 0
+                
+                /* Loop through all adjacent creatures to current creature */
+                for innerGridX in (gridX - 1)...(gridX + 1) {
+                    
+                    /* Ensure inner grid column is inside array */
+                    if innerGridX<0 || innerGridX >= columns { continue }
+                    
+                    for innerGridY in (gridY - 1)...(gridY + 1) {
+                        
+                        /* Ensure inner grid row is inside array */
+                        if innerGridY<0 || innerGridY >= rows { continue }
+                        
+                        /* Creature can't count itself as a neighbor */
+                        if innerGridX == gridX && innerGridY == gridY { continue }
+                        
+                        /* Grab adjacent creature reference */
+                        let adjacentCreature:Creature = gridArray[innerGridX][innerGridY]
+                        
+                        /* Only interested in living creatures */
+                        if adjacentCreature.isAlive {
+                            currentCreature.neighborCount += 1
+                        }  
+                    }
+                }    
+            }
+        }
+    }
+    
+    func updateCreatures() {
+        /* Process array and update creature status */
+        
+        /* Reset population counter */
+        population = 0
+        
+        /* Loop through columns */
+        for gridX in 0..<columns {
+            
+            /* Loop through rows */
+            for gridY in 0..<rows {
+                
+                /* Grab creature at grid position */
+                let currentCreature = gridArray[gridX][gridY]
+                
+                /* Check against game of life rules */
+                switch currentCreature.neighborCount {
+                case 3:
+                    currentCreature.isAlive = true
+                    break;
+                case 0...1, 4...8:
+                    currentCreature.isAlive = false
+                    break;
+                default:
+                    break;
+                }
+                
+                /* Refresh population count */
+                if currentCreature.isAlive { population += 1 }
+            }
+        }
+    }
+    
+    func evolve() {
+        /* Updated the grid to the next state in the game of life */
+        
+        /* Update all creature neighbor counts */
+        countNeighbors()
+        
+        /* Calculate all creatures alive or dead */
+        updateCreatures()
+        
+        /* Increment generation counter */
+        generation += 1
+    }
 }
